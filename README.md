@@ -34,7 +34,7 @@ Good to know:
 
 ## Modes
 
-| | 1 - Simple | 2 - Safe |
+| | 1 - Simple | 2 - Safe (RECOMMENDED) |
 |---|---|---|
 | Decides by | File name only | File name plus the `meta.json` of every package that stays |
 | Speed | Instant | Reads one small entry per package, (still fast...) |
