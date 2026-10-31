@@ -21,6 +21,8 @@ Windows batch script that keeps only the newest version of each Virt-A-Mate (VaM
 4. Double-click the file.
 5. Pick a mode, read the preview, then type `Y` and press Enter to delete (anything else cancels).
 
+
+
 1. 下载 `VaM_Clean_Old_Var.bat`。
 2. 把它放进 **VaM 根目录**,也就是包含 `AddonPackages` 的那个文件夹。
 3. **关闭 VaM。**
