@@ -37,7 +37,7 @@ Good to know:
 | | 1 - Simple | 2 - Safe |
 |---|---|---|
 | Decides by | File name only | File name plus the `meta.json` of every package that stays |
-| Speed | Instant | Reads one small entry per package, multi-threaded |
+| Speed | Instant | Reads one small entry per package, (still fast...) |
 | Old version that another package pins by exact version | Deleted | **Kept** |
 | Extra work | None | Also checks what the kept old versions depend on, repeating until nothing new turns up |
 
