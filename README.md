@@ -1,22 +1,7 @@
 # VAR-cleaning-tool
 Windows batch script that keeps only the newest version of each Virt-A-Mate (VaM) .var package and permanently deletes the old ones. Preview and confirm first. Optional Safe mode reads meta.json to keep old versions that other packages pin by exact version.
+这个神奇小玩意是用来清理重复的var文件的。
 
-
-One double-click to clean up the old versions of your **Virt-A-Mate (VaM)** `.var` packages.
-
-For every package named `Creator.Package.Version.var` inside `AddonPackages` (all subfolders included), the script keeps the newest version and permanently deletes the older ones. It always shows a preview first and asks for confirmation before it deletes anything.
-
-When you update packages, the new version is saved next to the old one, so old versions pile up and eat disk space. This script removes them in one pass.
-
-## Features
-
-- **Highest version wins.** Versions are compared as numbers (`10` is newer than `9`), and package names are matched case-insensitively.
-- **Two modes.** *Simple* decides by file name only. *Safe* also reads `meta.json` from your other packages and keeps old versions that something else depends on by exact version number.
-- **Preview and confirm.** You see exactly what will be kept and deleted, plus the space you will free. Nothing happens until you type `Y`.
-- **Subfolders included.** Packages you sorted into folders under `AddonPackages` are handled too.
-- **Fast Safe mode.** It reads only the zip directory and the one small `meta.json` entry of each package (never the whole file), using up to 8 threads, with a progress counter.
-- **Log file.** Every run that deletes something writes a log next to the script.
-- **Nothing to install.** One `.bat` file that uses the Windows PowerShell already built into Windows 10/11.
 
 ## Quick start
 
