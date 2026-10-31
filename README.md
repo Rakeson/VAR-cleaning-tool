@@ -3,7 +3,15 @@ Windows batch script that keeps only the newest version of each Virt-A-Mate (VaM
 
 这个神奇小玩意是用来清理重复的var文件的。
 
+## Features
 
+- **Highest version wins.** Versions are compared as numbers (`10` is newer than `9`), and package names are matched case-insensitively.
+- **Two modes.** _Simple_ decides by file name only. _Safe_ also reads `meta.json` from your other packages and keeps old versions that something else depends on by exact version number.
+- **Preview and confirm.** You see exactly what will be kept and deleted, plus the space you will free. Nothing happens until you type `Y`.
+- **Subfolders included.** Packages you sorted into folders under `AddonPackages` are handled too.
+- **Fast Safe mode.** It reads only the zip directory and the one small `meta.json` entry of each package (never the whole file), using up to 8 threads, with a progress counter.
+- **Log file.** Every run that deletes something writes a log next to the script.
+- **Nothing to install.** One `.bat` file that uses the Windows PowerShell already built into Windows 10/11.
 
 ## Quick start
 
@@ -13,6 +21,11 @@ Windows batch script that keeps only the newest version of each Virt-A-Mate (VaM
 4. Double-click the file.
 5. Pick a mode, read the preview, then type `Y` and press Enter to delete (anything else cancels).
 
+1. 下载 `VaM_Clean_Old_Var.bat`。
+2. 把它放进 **VaM 根目录**,也就是包含 `AddonPackages` 的那个文件夹。
+3. **关闭 VaM。**
+4. 双击运行。
+5. 选择模式,看预览,然后输入 `Y` 回车确认删除(输入其它任何内容都会取消)。
 
 Good to know:
 
