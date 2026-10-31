@@ -1,6 +1,8 @@
 # VAR-cleaning-tool
 Windows batch script that keeps only the newest version of each Virt-A-Mate (VaM) .var package and permanently deletes the old ones. Preview and confirm first. Optional Safe mode reads meta.json to keep old versions that other packages pin by exact version.
+
 这个神奇小玩意是用来清理重复的var文件的。
+
 
 
 ## Quick start
@@ -10,6 +12,7 @@ Windows batch script that keeps only the newest version of each Virt-A-Mate (VaM
 3. **Close VaM.**
 4. Double-click the file.
 5. Pick a mode, read the preview, then type `Y` and press Enter to delete (anything else cancels).
+
 
 Good to know:
 
